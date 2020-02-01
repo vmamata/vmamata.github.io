@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Gallery</title>
+    </head>
+
+    <body>
+
+        <br><br>
+
+        <center>
+            <h1 class="lg-heading" id="img-title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></h1>
+
+            <br><br>
+
+            <img id="pic">
+        </center>
+
+    </body>
+
+
+</html>
+
+<script>
+
+function load_image() {
+    var url = window.location.href;
+    var title = document.getElementById("img-title");
+    var img = document.getElementById("pic");
+    if(url.indexOf("a-walk-in-the-woods") > 0) {
+        title.innerHTML = "A Walk in the Woods";
+        img.src = "img/gallery/A Walk in the Woods.jpg";
+    }
+    else if(url.indexOf("exploration") > 0) {
+        title.innerHTML = "Exploration";
+        img.src = "img/gallery/Exploration.jpg";
+    }
+    else if(url.indexOf("girl") > 0) {
+        title.innerHTML = "Girl";
+        img.src = "img/gallery/Girl.jpg";
+    }
+    else if(url.indexOf("harvest") > 0) {
+        title.innerHTML = "Harvest";
+        img.src = "img/gallery/Harvest.jpg";
+    }
+    else if(url.indexOf("horizons-whisper") > 0) {
+        title.innerHTML = "Horizons Whisper";
+        img.src = "img/gallery/Horizons Whisper.jpg";
+    }
+    else if(url.indexOf("i-contain-multitudes") > 0) {
+        title.innerHTML = "I Contain Multitudes";
+        img.src = "img/gallery/I contain Multitudes.jpg";
+    }
+    else if(url.indexOf("less-is-more") > 0) {
+        title.innerHTML = "Less is More";
+        img.src = "img/gallery/Less is More.jpg";
+    }
+    else if(url.indexOf("letter-to-infinity") > 0) {
+        title.innerHTML = "Letter to Infinity";
+        img.src = "img/gallery/Letter to Infinity.jpg";
+    }
+    else if(url.indexOf("monsoon-raaga") > 0) {
+        title.innerHTML = "Monsoon Raaga";
+        img.src = "img/gallery/Monsoon Raaga.jpg";
+    }
+    else if(url.indexOf("perspectives") > 0) {
+        title.innerHTML = "Perspectives";
+        img.src = "img/gallery/Perspectives.jpg";
+    }
+    else if(url.indexOf("the-cosmos-is-within-us") > 0) {
+        title.innerHTML = "The Cosmos is Within Us";
+        img.src = "img/gallery/The Cosmos is Within Us.jpg";
+    }
+    else if(url.indexOf("to-each-her-home") > 0) {
+        title.innerHTML = "To Each Her Home";
+        img.src = "img/gallery/To Each Her Home.jpg";
+    }
+    else if(url.indexOf("tranquility") > 0) {
+        title.innerHTML = "Tranquility";
+        img.src = "img/gallery/Tranquility.jpg";
+    }
+    else if(url.indexOf("eenadu") > 0) {
+        title.innerHTML = "Eenadu Article";
+        img.src = "img/Eenadu.jpg";
+    }
+}
+
+window.onload = load_image();
+
+</script>
